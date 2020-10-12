@@ -89,7 +89,15 @@ function playTurn() {
     }
   });
   if (winner === "X" || winner === "O") {
-    alert("Player " + turn + " wins!");
+    var winnerOfGame = 0;
+    if (winner === 'X') {
+      winnerOfGame = 1;
+      alert("Player " + winnerOfGame + " wins!");
+    } else {
+      winnerOfGame = 2;
+      alert("Player " + winnerOfGame + " wins!");
+    }
+    //alert("Player " + turn + " wins!");
     newGame();
     winner = null;
   } else if (moves === rows * rows) {
