@@ -64,6 +64,11 @@ function playTurn() {
     return;
   }
   this.innerHTML = turn;
+  if (turn === "X") {
+    this.style.backgroundColor = "rgb(124, 252, 0)";
+  } else {
+    this.style.backgroundColor = "rgb(250, 128, 114)";
+  }
   moves = moves + 1;
   let winner = null;
   //let data_index = this.getAttribute('data-index');
@@ -90,14 +95,13 @@ function playTurn() {
   });
   if (winner === "X" || winner === "O") {
     var winnerOfGame = 0;
-    if (winner === 'X') {
+    if (winner === "X") {
       winnerOfGame = 1;
       alert("Player " + winnerOfGame + " won!");
     } else {
       winnerOfGame = 2;
       alert("Player " + winnerOfGame + " won!");
     }
-    //alert("Player " + turn + " wins!");
     newGame();
     winner = null;
   } else if (moves === rows * rows) {
