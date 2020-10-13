@@ -92,10 +92,10 @@ function playTurn() {
     var winnerOfGame = 0;
     if (winner === 'X') {
       winnerOfGame = 1;
-      alert("Player " + winnerOfGame + " wins!");
+      alert("Player " + winnerOfGame + " won!");
     } else {
       winnerOfGame = 2;
-      alert("Player " + winnerOfGame + " wins!");
+      alert("Player " + winnerOfGame + " won!");
     }
     //alert("Player " + turn + " wins!");
     newGame();
