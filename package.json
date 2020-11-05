@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "csc_project:project_2003461",
   "main": "index.html",
-  "scripts": {"start": "./node_modules/parcel-bundler/bin/cli.js index.html --port 8080","build": "parcel build index.html"},
+  "scripts": {"start": "./node_modules/parcel-bundler/bin/cli.js index.html --port 8080","build": "npx parcel build index.html"},
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "7.2.0",
